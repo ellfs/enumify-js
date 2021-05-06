@@ -1,0 +1,4 @@
+.eslintrc.*
+docs/*
+build/*
+assets/*

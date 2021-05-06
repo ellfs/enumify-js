@@ -1,0 +1,27 @@
+{
+  "name": "enumify-js",
+  "version": "0.1.8",
+  "description": "A library for easily creating enum-like objects in ES6.",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ellfs/enumify-js.git"
+  },
+  "main": "lib/index.js",
+  "pre-commit": [
+    "lint:staged"
+  ],
+  "scripts": {
+    "lint": "eslint --color .",
+    "lint:staged": "eslint --color $(git diff --cached --name-only --diff-filter=ACMR '*.js' '*.jsx' | sed 's/ /\\\\ /g')",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.17.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "pre-commit": "^1.2.2"
+  }
+}
