@@ -1,6 +1,6 @@
 {
   "name": "enumify-js",
-  "version": "0.1.8",
+  "version": "0.2.0",
   "description": "A library for easily creating enum-like objects in ES6. Inspired by twttao/enumify-js",
   "repository": {
     "type": "git",
