@@ -33,4 +33,5 @@ console.log({
   // Animal_param,
   Animal_array,
   Animal_object,
+  or: Animal_object.CAT | Animal_object.DOG | Animal_object.MONKEY,
 });
