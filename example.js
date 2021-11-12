@@ -1,3 +1,5 @@
+const assert = require('assert');
+
 const { enumify, power_of_2 } = require('./lib');
 
 console.log('Animal_param');
@@ -26,6 +28,12 @@ try {
 } catch (e) {
   console.log('correct');
 }
+
+console.log('toJSON()');
+const expected = JSON.stringify({ string: 'CAT' });
+const actual = JSON.stringify({ string: Animal_array.CAT });
+console.log({ expected, actual });
+assert.deepEqual(expected, actual);
 
 
 console.log('Animal_object');
