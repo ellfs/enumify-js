@@ -20,6 +20,14 @@ const Animal_array = enumify([
   'MONKEY',
 ]);
 
+try {
+  Animal_array._CAT;
+  console.error('incorrect');
+} catch (e) {
+  console.log('correct');
+}
+
+
 console.log('Animal_object');
 const Animal_object = enumify([
   'CAT',
@@ -35,3 +43,19 @@ console.log({
   Animal_object,
   or: Animal_object.CAT | Animal_object.DOG | Animal_object.MONKEY,
 });
+
+const Interval = enumify({
+  daily: {
+    hour: 0,
+    minute: 0,
+  },
+  hourly: {
+    minute: 0,
+  },
+  minutely: {
+
+  },
+});
+
+console.log({ Interval });
+
